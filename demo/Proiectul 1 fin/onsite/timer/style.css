@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(90deg, #33f5e0, #5172e8);
+}
+
+main {
+    font-family: 'Righteous', cursive;
+    font-size: 3rem;
+    margin-top: 10%;
+}
+
+#sec {
+    color: whitesmoke;
+}

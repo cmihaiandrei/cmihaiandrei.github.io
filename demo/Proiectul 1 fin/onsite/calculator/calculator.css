@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    background-color: rgb(179, 179, 179)
+}
+
+.afisare {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    align-content: center;
+}
+
+.calculator {
+    justify-content: center;
+    max-width: 300px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.butoane {
+    background-color: whitesmoke;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 22px;
+}
+
+.butoane:hover {
+    background-color: rgba(153, 77, 224, 0.671);
+}
+
+.result {
+    font-size: 32px;
+}

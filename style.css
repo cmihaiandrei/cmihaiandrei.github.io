@@ -1,69 +1,116 @@
-* {
+body {
     margin: 0;
-}
-
-body,
-html {
-    width: 100%;
-    height: 100%;
-}
-
-header {
-    background-position: center;
-    background-image: url("wall.jpg");
-    background-size: cover;
-    height: 100%;
-    text-align: center;
-}
-
-.title {
-    display: inline-block;
-    margin-top: 200px;
-    color: cornsilk;
-}
-
-
-.test {
+    padding: 0;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #060c21;
 }
 
-.proiecte {
-    margin-top: 20px;
+.container {
+    display: flex;
+    flex-direction: row;
 }
 
-.proiect1 {
+.box {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #060c21;
+    margin: 20px;
+}
+
+.box::before {
+    content: ' ';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+}
+
+.box::after {
+    content: ' ';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -2;
+    filter: blur(40px);
+}
+
+
+.box::before,
+.box::after {
+    background: linear-gradient(235deg, #78ff00, #060c21, #00bcd4);
+}
+
+#nr1::before,
+#nr1::after {
+    background: linear-gradient(235deg, #ff0057, #060c21, #e64a19);
+}
+
+.content {
+    padding: 20px;
+    box-sizing: border-box;
+    color: white
+}
+
+
+.box .content a {
+    position: relative;
+    margin: 20px 0 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid #fff;
     display: inline-block;
-    width: 360px;
-    height: 200px;
-    margin-right: 20px;
-    opacity: .6;
-    background-image: url("p1.JPG");
-    background-size: 120%;
+    color: #fff;
+    transition: 0.5s;
+    transform: translateY(-40px);
+    opacity: 0;
+    visibility: hidden;
 }
 
-.proiect1:hover {
-    background-image: url("p1.JPG");
-    background-size: cover;
-    cursor: hand;
-    cursor: pointer;
+.box:hover .content a {
+    transform: translateY(0);
     opacity: 1;
+    visibility: visible;
 }
 
-.proiect2 {
-    display: inline-block;
-    width: 360px;
-    height: 200px;
-    margin-right: 20px;
-    opacity: .6;
-    background-image: url("p2.JPG");
-    background-size: 120%;
+.box .content a:hover {
+    color: #000;
+    background: #fff;
 }
 
-.proiect2:hover {
-    background-image: url("p2.JPG");
-    background-size: cover;
-    cursor: hand;
-    cursor: pointer;
-    opacity: 1;
+.content {
+    position: relative;
+    padding: 20px;
+    transform: translateY(40px);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content h2 {
+    position: absolute;
+    top: -60px;
+    /* right: 20px; */
+    margin: 0;
+    padding: 0;
+    font-size: 10em;
+    color: rgba(255, 255, 255, .02);
+    transition: 0.5s;
+}
+
+.box:hover .content h2 {
+    top: -120px;
 }

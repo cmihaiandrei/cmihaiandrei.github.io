@@ -58,6 +58,13 @@ body {
     background: linear-gradient(235deg, #ff0057, #060c21, #e64a19);
 }
 
+#nr3::before,
+#nr3::after {
+    background: linear-gradient(235deg, #5d02ff, #060c21, #e91e63);
+}
+
+
+
 .content {
     padding: 20px;
     box-sizing: border-box;

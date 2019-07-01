@@ -1,14 +1,30 @@
 // aduagam in HTML formularul de adaugare produs
 mainPage.innerHTML += `
     <form id="addPhone">
-      Nume: <input type="text" name="phoneName">
-      Pret: <input type="number" name="phonePrice">
-      An aparitie: <input type="text" name="phoneRelease">
-      Adaugat: <input type="text" name="phoneAdded">
-      Imagine: <input type="text" name="phonePic">
-      <input type="submit" class="btn btn-warning" value="Adauga telefon">
+      <div class="form-group">
+        <label for="formGroupExampleInput"></label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nume" name="phoneName">
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Pret" name="phonePrice">
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="An aparitie" name="phoneRelease">
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Adaugat" name="phoneAdded">
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Imagine" name="phonePic">
+      </div>
+        <input type="submit" class="btn btn-warning" value="Adauga telefon">
     </form>
 `;
+
+{
+  /* <form>
+    <div class="form-group">
+      <label for="formGroupExampleInput">Example label</label>
+      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+    </div>
+    <div class="form-group">
+      <label for="formGroupExampleInput2">Another label</label>
+      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+    </div>
+  </form> */
+}
 
 function addFormFunctionality() {
 

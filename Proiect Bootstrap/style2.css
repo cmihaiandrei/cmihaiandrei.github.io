@@ -16,3 +16,25 @@
     width: 190px;
     margin-top: 20px;
 }
+
+.form-group {
+    display: flex;
+    align-items: baseline;
+    margin: 20px;
+}
+
+.form-control {
+    margin: 10px;
+}
+
+#addPhone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    margin: 10px;
+    height: 40px;
+    width: 170px;
+}

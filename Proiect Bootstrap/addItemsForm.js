@@ -1,5 +1,10 @@
 // aduagam in HTML formularul de adaugare produs
 mainPage.innerHTML += `
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+  Administration
+</button>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
     <form id="addPhone">
       <div class="form-group">
         <label for="formGroupExampleInput"></label>
@@ -9,22 +14,12 @@ mainPage.innerHTML += `
         <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Adaugat" name="phoneAdded">
         <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Imagine" name="phonePic">
       </div>
-        <input type="submit" class="btn btn-warning" value="Adauga telefon">
-    </form>
+          <input type="submit" class="btn btn-warning" value="Adauga telefon">
+      </form>
+  </div>
+</div>
 `;
 
-{
-  /* <form>
-    <div class="form-group">
-      <label for="formGroupExampleInput">Example label</label>
-      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
-    </div>
-    <div class="form-group">
-      <label for="formGroupExampleInput2">Another label</label>
-      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
-    </div>
-  </form> */
-}
 
 function addFormFunctionality() {
 

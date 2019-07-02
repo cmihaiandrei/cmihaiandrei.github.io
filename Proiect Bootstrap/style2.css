@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 #phone-list {
     display: flex;
     justify-content: center;
@@ -52,4 +58,10 @@
 #welcome {
     display: flex;
     justify-content: center;
+}
+
+.mr-3 {
+    width: 64px;
+    height: 64px;
+    margin-left: 20px;
 }

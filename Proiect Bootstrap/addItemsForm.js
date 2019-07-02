@@ -1,6 +1,6 @@
 // aduagam in HTML formularul de adaugare produs
 mainPage.innerHTML += `
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+<button id="adminConsole" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
   Admin Console
 </button>
 <div class="collapse" id="collapseExample">

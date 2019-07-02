@@ -36,5 +36,20 @@
 .btn {
     margin: 10px;
     height: 40px;
-    width: 170px;
+    width: 200px;
+}
+
+.butoane {
+    display: flex;
+    justify-content: center;
+}
+
+#filterWith {
+    height: 40px;
+    width: 200px;
+}
+
+#welcome {
+    display: flex;
+    justify-content: center;
 }

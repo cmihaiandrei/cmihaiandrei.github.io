@@ -1,5 +1,7 @@
 mainPage.innerHTML += `
-	<h2>Telefoane:</h2>
+<div id="welcome" class="alert alert-info" role="alert">
+	Bun venit pe GSM Shop!
+</div>
 		<div id="phone-list">
 		</div>
 `;

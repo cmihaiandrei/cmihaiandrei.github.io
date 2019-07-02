@@ -1,11 +1,12 @@
 mainPage.innerHTML += `
 <div class="butoane">
-  <button id="sortByName">Sorteaza dupa nume</button>
-  <button id="sortByPrice">Sorteaza dupa pret</button>
-  <button id="sortByRelease">Sorteaza dupa an aparitie</button>
-  <button id="sortByAdded">Sorteaza dupa data adaugarii</button>
-  <button id="filterByPrice">Filtreaza dupa pret</button>
-  <input id="filterWith"></input>
+  <button type="button" class="btn btn-outline-danger btn-sm" id="sortByName">Sorteaza dupa nume</button>
+  <button type="button" class="btn btn-outline-danger btn-sm" id="sortByPrice">Sorteaza dupa pret</button>
+  <button type="button" class="btn btn-outline-danger btn-sm" id="sortByRelease">Sorteaza dupa an aparitie</button>
+  <button type="button" class="btn btn-outline-danger btn-sm" id="sortByAdded">Sorteaza dupa data adaugarii</button>
+  <button type="button" class="btn btn-outline-danger btn-sm" id="filterByPrice">Filtreaza dupa pret</button>
+  <input type="text" class="form-control" id="filterWith">
+
 </div>
 `;
 
